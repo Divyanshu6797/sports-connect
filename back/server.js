@@ -7,8 +7,10 @@ const playerRoute=require ('./routes/PlayerRoute')
 const coachRoute= require('./routes/CoachRoute')
 const academyRoute=require('./routes/AcademyRoute')
 const playerPostRoute=require('./routes/PlayerPostRoute')
+const cors = require("cors")
 
 const app=express()
+app.use(cors());
 
 app.use(express.json());
 app.use(cookieParser());
